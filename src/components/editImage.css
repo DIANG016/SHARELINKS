@@ -1,0 +1,67 @@
+.tituloEditImagen {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(150, 94, 202);
+    text-shadow:  0.5px 0.5px rgb(30, 128, 64);
+}
+
+.editImagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ margin: 40px;
+}
+
+.editImagenFiel {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: rgb(150, 94, 202);
+    font-weight: bold;
+    border: 2px solid rgb(150, 94, 202);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(30, 128, 64);
+    gap:10px
+}
+
+.buttonConEditImagen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.buttonEditImagen {
+    background: rgb(150, 94, 202);
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem 2rem;
+    border: 0;
+    font-weight: bold;
+    box-shadow: 0.5px 0.5px 0.5px 0.3px  rgb(32, 64, 43);
+    text-shadow:  0.1px 0.1px black;
+}
+
+.buttonEditImagen:hover {
+    background: rgb(141, 54, 222);
+  }
+  
+  .buttonEditImagen:active {
+    background: linear-gradient(to bottom, transparent, rgb(114, 44, 184));
+  }
+  
+  
+    .errorEditImagen {
+      color: red;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @media (min-width: 600px) {
+   
+      .editImagen{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+      }
+    }

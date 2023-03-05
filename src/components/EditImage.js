@@ -108,7 +108,7 @@ export const EditImage = () => {
         <div  className="buttonConEditImagen">
           <button className="buttonEditImagen">Guardar cambios</button>
         </div>
-        {error ? <p className="errorEditImagen">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
         {loading ? (
           <p>
             <Spinner />

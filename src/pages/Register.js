@@ -85,7 +85,7 @@ export const Register = () => {
         <div className="registerDiv">
           <button className="registerButton">Regístrate</button>
         </div>
-        {error ? <p className="errorRegiter">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
       </form>
     </section>
   );

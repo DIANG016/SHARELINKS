@@ -5,6 +5,38 @@
   box-sizing: border-box;
 }
 
+
+html {
+  --primary: rgb(150, 94, 202);
+  --secundary: rgb(76, 224, 126);
+  --text-shadown:  rgb(30, 128, 64);
+  --box-shadown: rgb(32, 64, 43);
+}
+
+
+
+.error{
+  color:red;
+  margin-top: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #root {
   min-height: 100vh;
   display: grid;
@@ -15,7 +47,7 @@
 main {
   display: flex;
   flex-direction: column;
-  background-color: rgb(76, 224, 126);
+  background-color:  var(--secundary);
  
 }
 
@@ -25,12 +57,11 @@ footer {
   justify-content: center;
   color: white;
   font-weight: bold;
-  background-color: rgb(150, 94, 202);
-
- 
+  background-color:  var(--primary);
 
 
 }
+
 
 /*Modo nocturno*/
 

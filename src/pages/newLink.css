@@ -104,12 +104,6 @@
   background: linear-gradient(to bottom, transparent, rgb(114, 44, 184));
 }
 
-.errorNewLink {
-  text-align: center;
-  color: red;
-  margin-top: 20px;
-}
-
 
 @media (min-width: 600px) {
    

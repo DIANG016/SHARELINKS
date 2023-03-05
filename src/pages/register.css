@@ -7,7 +7,7 @@
 .tituloRegistro {
   margin-top: 5rem;
   padding: 2rem;
-  color: rgb(150, 94, 202);
+  color:  var(--primary);
   font-size: 2.5rem;
   text-shadow:  0.5px 0.5px 0.5px rgb(32, 64, 43);
 
@@ -41,6 +41,8 @@ input::placeholder {
 
 .registerDiv {
   margin-top: 30px;
+  margin-bottom: 20px;
+ 
 }
  .registerButton {
   background: rgb(150, 94, 202);
@@ -62,8 +64,3 @@ input::placeholder {
 
 }
 
-.errorRegiter {
-  color:red;
-  margin: 30px;
-  text-align: center;
-}

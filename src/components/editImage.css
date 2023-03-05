@@ -1,8 +1,8 @@
 .tituloEditImagen {
     margin-top: 40px;
     text-align: center;
-    color: rgb(150, 94, 202);
-    text-shadow:  0.5px 0.5px rgb(30, 128, 64);
+    color: var(--primary);
+    text-shadow:  0.5px 0.5px var(--text-shadown);
 }
 
 .editImagen {
@@ -16,11 +16,11 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    color: rgb(150, 94, 202);
+    color: var(--primary);
     font-weight: bold;
-    border: 2px solid rgb(150, 94, 202);
+    border: 2px solid var(--primary);
     border-radius: 5px;
-    box-shadow: 1px 1px 2px rgb(30, 128, 64);
+    box-shadow: 1px 1px 2px var(--text-shadown);
     gap:10px
 }
 
@@ -32,13 +32,13 @@
 }
 
 .buttonEditImagen {
-    background: rgb(150, 94, 202);
+    background:  var(--primary);
     color: white;
     border-radius: 5px;
     padding: 0.2rem 2rem;
     border: 0;
     font-weight: bold;
-    box-shadow: 0.5px 0.5px 0.5px 0.3px  rgb(32, 64, 43);
+    box-shadow: 0.5px 0.5px 0.5px 0.3px  var(--box-shadown);
     text-shadow:  0.1px 0.1px black;
 }
 
@@ -50,12 +50,6 @@
     background: linear-gradient(to bottom, transparent, rgb(114, 44, 184));
   }
   
-  
-    .errorEditImagen {
-      color: red;
-      margin-top: 20px;
-      text-align: center;
-    }
 
     @media (min-width: 600px) {
    

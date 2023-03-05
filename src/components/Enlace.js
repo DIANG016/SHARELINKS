@@ -82,7 +82,7 @@ export const Enlace = ({ enlace, removeLink }) => {
           >
             Borrar Link
           </button>
-          {error ? <p className="errorEnlace">{error}</p> : null}
+          {error ? <p className="error">{error}</p> : null}
           {/*  */}
         </div>
       ) : null}

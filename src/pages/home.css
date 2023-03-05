@@ -3,17 +3,17 @@
 /*Home sin logearse*/
 
 .contenedorHome {
-  color: rgb(150, 94, 202);
+  color:var(--primary);
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 .homeTitulo {
-  color: rgb(150, 94, 202);
+  color: var(--primary);
   font-family: "Alex Brush", cursive;
   font-size: 4rem;
   margin-top: 30px;
-  text-shadow: 0.5px 0.5px rgb(30, 128, 64);
+  text-shadow: 0.5px 0.5px var(--text-shadown);
   text-align: center;
 }
 
@@ -77,28 +77,28 @@ img.move3 {
 .homeSubTitulo1 {
   margin-bottom: 10px;
   font-size: 1.6rem;
-  text-shadow: 0.5px 0.5px rgb(30, 128, 64);
+  text-shadow: 0.5px 0.5px var(--text-shadown);
 }
 
 .homep {
   color: rgb(156, 108, 201);
-  text-shadow: 0.3px 0.3px rgb(30, 128, 64);
+  text-shadow: 0.3px 0.3px var(--text-shadown);
 }
 
 .homep1 {
   margin: 5px;
   color: rgb(160, 120, 197);
-  text-shadow: 0.3px 0.3px rgb(30, 128, 64);
+  text-shadow: 0.3px 0.3px var(--text-shadown);
 }
 .homep2 {
   color: rgb(171, 135, 206);
-  text-shadow: 0.3px 0.3px rgb(30, 128, 64);
+  text-shadow: 0.3px 0.3px var(--text-shadown);
 }
 .homep3 {
   margin-top: 5px;
   margin-bottom: 20px;
   color: rgb(177, 145, 208);
-  text-shadow: 0.3px 0.3px rgb(30, 128, 64);
+  text-shadow: 0.3px 0.3px var(--text-shadown);
 }
 
 /* estilos logeado*/

@@ -59,7 +59,7 @@ export const Login = () => {
         <div className="divLoginButton">
           <button className="loginButton">Iniciar sesión</button>
         </div>
-        {error ? <p className="errorLogin">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
       </form>
       <article>
         <p className="linkRegistro">

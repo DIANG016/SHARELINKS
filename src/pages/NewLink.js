@@ -94,7 +94,7 @@ export const NewLink = ({ addLink }) => {
         <div className="divButton">
           <button className="newLinkButton">Enviar Link</button>
         </div>
-        {error ? <p className="errorNewLink">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
         {loading ? (
           <p>
             <Spinner />

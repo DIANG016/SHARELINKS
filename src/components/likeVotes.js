@@ -41,7 +41,7 @@ export const LikeVotes = ({defaultValue, id}) => {
       {active ? "♡" : "♥" }
     </span>
         {vote ? <p className="datoVote">{dato}</p> : null}
-        {error ? <p className="errorVote">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
         </>
     );
 }

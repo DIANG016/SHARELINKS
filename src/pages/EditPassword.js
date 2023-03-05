@@ -73,7 +73,7 @@ const navigate = useNavigate();
           <button className="userButtonPassword">Guardar cambios</button>
         </div>
         {newPassword ? <p>{dato}</p> : null}
-        {error ? <p className="errorEditPassword">{error}</p> : null}
+        {error ? <p className="error">{error}</p> : null}
         {loading ? <p><Spinner /></p>  : null}
       </form>
     </>

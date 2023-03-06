@@ -4,6 +4,11 @@ Header {
   display: flex;
   align-items: center;
   padding: 10px;
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+  height: 3rem;
+  top:0;
 }
 
 .titleHeader {

@@ -54,7 +54,7 @@ export const EditUser = () => {
         biography
       });
 
-      // setPhoto(null);
+     
       navigate(`/user/${id}`);
       toast.success("¡Cambios realizados correctamente!");
     } catch (error) {

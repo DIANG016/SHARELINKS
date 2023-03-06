@@ -114,12 +114,6 @@ main.nigth input::placeholder {
 
 /*Version ordenador*/
 
-@media (min-width: 500px) {
-  body {
-    grid-template-rows: 1rem 1fr 2rem;
-  }
-}
-
 @media (min-width: 600px) {
   #root {
     grid-template-rows: 2.5rem 1fr 2rem;

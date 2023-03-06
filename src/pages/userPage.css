@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   margin-left: 40px;
-  color: rgb(150, 94, 202);
-  text-shadow: 0.4px 0.4px rgb(30, 128, 64);
+  color: var(--primary);
+  text-shadow: 0.4px 0.4px var(--text-shadow);
   gap: 8px;
  
 }
 
 .fotoUser {
-  border: solid 5px rgb(150, 94, 202);
+  border: solid 5px var(--primary);
   width: 80px;
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(30, 128, 64);
+  box-shadow: 0.5px 0.5px 0.5px 0.5px var(--box-shadow);
   margin: 40px 0 40px 40px;
 }
 
@@ -36,23 +36,23 @@
   border-radius: 50px;
   border: 0;
   color: white;
-  background: rgb(150, 94, 202);
+  background:var(--primary);
   padding: 1px;
 }   
 
 .userTitle {
-  text-shadow: 0.5px 0.5px rgb(30, 128, 64);
+  text-shadow: 0.5px 0.5px var(--text-shadow);
 }
 
 .buttonUserPage {
-  background: rgb(150, 94, 202);
-  color: white;
+  background: var(--primary);
+  color: var(--colorLetra);
   border-radius: 5px;
   padding: 0.2rem 2rem;
   border: 0;
   font-weight: bold;
   box-shadow: 0.5px 0.5px 0.5px 0.3px rgb(32, 64, 43);
-  text-shadow: 0.1px 0.1px black;
+  text-shadow: 0.1px 0.1px var(--text-shadow-button);
   margin-top: 5px;
 }
 
@@ -68,5 +68,5 @@
 .pListEnlace {
   margin-top: 20px;
   font-weight: bold;
-  text-shadow: 0.4px 0.4px rgb(30, 128, 64);
+  text-shadow: 0.4px 0.4px var(--text-shadow);
 }

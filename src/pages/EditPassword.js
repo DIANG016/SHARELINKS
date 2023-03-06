@@ -69,8 +69,8 @@ const navigate = useNavigate();
             onChange={(e) => setNewPassword(e.target.value)}
           />
         </fieldset>
-        <div className="divButtonEdit">
-          <button className="userButtonPassword">Guardar cambios</button>
+        <div className="divButtonEdit buttonCon">
+          <button className="buttonBot">Guardar cambios</button>
         </div>
         {newPassword ? <p>{dato}</p> : null}
         {error ? <p className="error">{error}</p> : null}

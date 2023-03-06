@@ -105,8 +105,8 @@ export const EditImage = () => {
             </figure>
           ) : null}
         </fieldset>
-        <div  className="buttonConEditImagen">
-          <button className="buttonEditImagen">Guardar cambios</button>
+        <div  className="buttonCon buttonConEditImagen">
+          <button className="buttonBot">Guardar cambios</button>
         </div>
         {error ? <p className="error">{error}</p> : null}
         {loading ? (

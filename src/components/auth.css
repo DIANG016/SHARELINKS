@@ -1,39 +1,34 @@
+.auth {
+  color: var(--colorLetra);
+  text-decoration: none;
+  margin-right: 5px;
+}
 
-.auth{
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
-  }
-  
- 
-  .linkLogout {
-   text-decoration: none;
-  }
+.linkLogout {
+  text-decoration: none;
+}
 
-  .imageEditFigure {
-    display: flex;
-   
-  }
+.imageEditFigure {
+  display: flex;
+}
 
-  .imageEdit {
-    
-    border-radius: 50%;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-   
-  }
+.imageEdit {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
 
-  .contAuth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.contAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .logout {
-    margin-top: 5px;
-    color: white;
-  }
+.logout {
+  margin-top: 5px;
+  color: var(--colorLetra);
+}
 
 .ulAuth li {
   list-style: none;

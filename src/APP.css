@@ -5,115 +5,111 @@
   box-sizing: border-box;
 }
 
-
 html {
   --primary: rgb(150, 94, 202);
-  --secundary: rgb(76, 224, 126);
-  --text-shadown:  rgb(30, 128, 64);
-  --box-shadown: rgb(32, 64, 43);
+  --secondary: rgb(76, 224, 126);
+  --colorLetra: white;
+  --text-shadow: rgb(32, 64, 43);
+  --box-shadow: rgb(30, 128, 64);
+  --background-color-input: rgb(140, 246, 163);
+  --button-background: rgb(141, 54, 222);
+  --button-background-active: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(114, 44, 184)
+  );
+  --text-shadow-button: black;
 }
 
+/*Botones */
 
+.buttonCon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-.error{
-  color:red;
+.buttonBot {
+  background: var(--primary);
+  color: var(--colorLetra);
+  border-radius: 5px;
+  padding: 0.2rem 2rem;
+  border: 0;
+  font-weight: bold;
+  box-shadow: 0.5px 0.5px 0.5px 0.3px var(--box-shadow);
+  text-shadow: 0.1px 0.1px var(--text-shadow-button);
+}
+
+.buttonBot:hover {
+  background: var(--button-background);
+}
+
+.buttonBot:active {
+  background: var(--button-background-active);
+}
+
+.error {
+  color: red;
   margin-top: 10px;
   text-align: center;
   margin: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #root {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 3.5rem 1fr 2rem;
-
 }
 
 main {
   display: flex;
   flex-direction: column;
-  background-color:  var(--secundary);
- 
+  background-color: var(--secondary);
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--colorLetra);
   font-weight: bold;
-  background-color:  var(--primary);
-
-
+  background-color: var(--primary);
 }
-
 
 /*Modo nocturno*/
 
 main.nigth {
-  background-color: #292730;
+  --backgroundColorNight: #292730;
+  --colorLetraNight: black;
+  --secondaryNight: rgb(61, 104, 75);
+}
+main.nigth {
+  background-color: var(--backgroundColorNight);
   min-height: 100vh;
 }
 
-
-main.nigth .imputNewLink {
-  color: black;
-  background-color: rgb(61, 104, 75);
-}
-
-main.nigth .inputEdit {
-  color: black;
-  background-color: rgb(61, 104, 75);
-}
-
-main.nigth textarea {
-  color: black;
-  background-color: rgb(61, 104, 75);
-}
-
-main.nigth .inputLogin {
-  color: black;
-  background-color: rgb(61, 104, 75);
+main.nigth .imputNewLink,
+main.nigth .inputEdit,
+main.nigth textarea,
+main.nigth .inputLogin,
+main.nigth .inputRegister,
+main.nigth .inputEditPassword {
+  color: var(--colorLetraNight);
+  background-color: var(--secondaryNight);
 }
 
 main.nigth input::placeholder {
   color: rgba(189, 179, 199, 0.4);
 }
 
-main.nigth .inputRegister {
-  color: black;
-  background-color: rgb(61, 104, 75);
-  /*font-weight: bold;*/
-}
-
-main.nigth .inputEditPassword {
-  color: black;
-  background-color: rgb(61, 104, 75);
-}
-
 .modoNocturnoSun {
   margin-top: 10px;
-  color: white;
+  color: var(--colorLetra);
 }
 
 .modoNocturnoMoon {
   margin-top: 10px;
-  color: white;
+  color: var(--colorLetra);
 }
 
 /*Version ordenador*/
@@ -128,7 +124,4 @@ main.nigth .inputEditPassword {
   #root {
     grid-template-rows: 2.5rem 1fr 2rem;
   }
-
-
-
 }

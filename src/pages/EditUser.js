@@ -101,8 +101,8 @@ export const EditUser = () => {
             onChange={(e) => setBiography(e.target.value)}
           />
         </fieldset>
-        <div className="divButtonEdit">
-          <button className="userButton">Guardar cambios</button>
+        <div className=" buttonCon divButtonEdit">
+          <button className="buttonBot">Guardar cambios</button>
         </div>
         {error ? <p className="errorEdit">{error}</p> : null}
         {loading ? (

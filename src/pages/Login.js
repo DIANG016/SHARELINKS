@@ -57,7 +57,7 @@ export const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <div className="divLoginButton">
-          <button className="loginButton">Iniciar sesión</button>
+          <button className="buttonBot">Iniciar sesión</button>
         </div>
         {error ? <p className="error">{error}</p> : null}
       </form>

@@ -91,8 +91,8 @@ export const NewLink = ({ addLink }) => {
             </figure>
           ) : null}
         </fieldset>
-        <div className="divButton">
-          <button className="newLinkButton">Enviar Link</button>
+        <div className= "buttonCon divButton">
+          <button className="buttonBot">Enviar Link</button>
         </div>
         {error ? <p className="error">{error}</p> : null}
         {loading ? (

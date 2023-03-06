@@ -1,47 +1,42 @@
+Header {
+  background-color: var(--primary);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
+.titleHeader {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  font-size: x-large;
+}
 
-Header{
-    background-color: rgb(150, 94, 202);
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-
-  }
-
-
- .titleHeader {
-    text-decoration: none;
-    color: white;
-    text-shadow:  0.5px 0.5px 0.5px black;
-    font-size:x-large;
-    
-  }
-
- .header:hover {
-    color: rgb(231, 220, 242);
-  } 
+.header:hover {
+  color: rgb(231, 220, 242);
+}
 
 /*auth navegador register y login*/
 
-.ulAuth{
+.ulAuth {
   display: flex;
 }
 
 .liAuth {
   text-decoration: none;
-  color: white;
+  color: var(--colorLetra);
   font-weight: bold;
   padding: 5px;
   margin: 3px;
-  background-color: rgb(76, 224, 126);
+  background-color: var(--secondary);
   border-radius: 3px;
   box-shadow: 0.5px 0.5px 0.5px 0.5px black;
-  text-shadow:  0.2px 0.2px 0.5px white;
-} 
+  text-shadow: 0.2px 0.2px 0.5px white;
+}
 
 .liAuth:hover {
-  background-color:rgb(145, 236, 172);
+  background-color: rgb(145, 236, 172);
 }
 
 .liAuth:active {

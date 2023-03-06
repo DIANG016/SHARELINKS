@@ -3,7 +3,7 @@
 /*Home sin logearse*/
 
 .contenedorHome {
-  color:var(--primary);
+  color: var(--primary);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   font-family: "Alex Brush", cursive;
   font-size: 4rem;
   margin-top: 30px;
-  text-shadow: 0.5px 0.5px var(--text-shadown);
+  text-shadow: 0.5px 0.5px black;
   text-align: center;
 }
 
@@ -108,8 +108,8 @@ img.move3 {
   text-align: center;
   margin-top: 40px;
   font-size: 2rem;
-  color: rgb(150, 94, 202);
-  text-shadow: 0.3px 0.3px rgb(30, 128, 64);
+  color: var(--primary);
+  text-shadow: 0.3px 0.3px var(--text-shadow);
 }
 
 /*barra subir enlace*/
@@ -122,7 +122,7 @@ img.move3 {
 }
 
 .fotoHome {
-  border: solid 3px rgb(150, 94, 202);
+  border: solid 3px var(--primary);
   width: 80px;
   height: 80px;
   border-radius: 50px;
@@ -138,17 +138,17 @@ img.move3 {
 }
 
 .linkSubeLink {
-  border: 1px solid rgb(150, 94, 202);
+  border: 1px solid var(--primary);
   border-radius: 50px;
   text-decoration: none;
   color: rgb(180, 166, 193);
   width: 240px;
   padding: 5px;
-  box-shadow: 0.5px 0.5px 1px rgb(30, 128, 64);
+  box-shadow: 0.5px 0.5px 1px var(--box-shadow);
 }
 
 .avatarHome {
-  box-shadow: 0.5px 0.5px 2px 1px rgb(30, 128, 64);
+  box-shadow: 0.5px 0.5px 2px 1px var(--box-shadow);
 }
 
 @media (min-width: 600px) {
@@ -186,9 +186,8 @@ img.move3 {
     font-size: x-large;
   }
 
-/*home logeado*/
-.tituloHomeLogeado {
-  margin-top: 20px;
-}
-
+  /*home logeado*/
+  .tituloHomeLogeado {
+    margin-top: 20px;
+  }
 }

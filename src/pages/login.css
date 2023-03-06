@@ -1,44 +1,41 @@
- @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Press+Start+2P&display=swap");
 
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+}
 
 .titleLogin {
-    padding: 2rem;
-    color: rgb(150, 94, 202);
-    font-family: 'Alex Brush', cursive;
-    font-size: 4rem;
-    margin-top: 5rem;
-    text-shadow:  0.5px 0.5px 0.5px rgb(32, 64, 43);
-  }
+  padding: 2rem;
+  color: var(--primary);
+  font-family: "Alex Brush", cursive;
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
 
-  .loginForm {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-   
- }
+.loginForm {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 .inputLogin {
-  
-   border: none;
-   border-bottom: 3px solid rgb(150, 94, 202); 
-   outline-color:darkorchid;
-   background-color: rgb(140, 246, 163);
-   color: rgb(150, 94, 202);
-   padding: 5px;
-   width: 220px;
-  
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  outline-color: darkorchid;
+  background-color: var(--background-color-input);
+  color: var(--primary);
+  padding: 5px;
+  width: 220px;
 }
 
 .inputLogin:focus {
-  background: linear-gradient(to bottom, transparent, rgb(184, 245, 197)); 
-  border-bottom: 3px solid rgb(199, 157, 239); 
+  background: linear-gradient(to bottom, transparent, rgb(184, 245, 197));
+  border-bottom: 3px solid rgb(199, 157, 239);
 }
 
 input::placeholder {
@@ -46,44 +43,18 @@ input::placeholder {
 }
 
 .divLoginButton {
-margin-top: 30px;
-
-
+  margin-top: 30px;
 }
 
-.loginButton {
-    background: rgb(150, 94, 202);
-    color: white;
-    border-radius: 5px;
-    padding: 0.2rem 2rem;
-    border: none ;
-    font-weight: bold;
-    box-shadow: 0.5px 0.5px 0.5px 0.3px  rgb(32, 64, 43);
-    text-shadow:  0.5px 0.5px 0.5px black;
+.linkRegistro {
+  text-align: center;
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.loginButton:hover {
-  background: rgb(141, 54, 222);
+.linkRegistro1 {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
 }
-
-.loginButton:active {
-  background: linear-gradient(to bottom, transparent, rgb(114, 44, 184));
-
-}
-
- 
- .linkRegistro {
-   text-align: center;
-   color: rgb(150, 94, 202);
-   margin-top: 30px;
-   margin-bottom: 20px;
-   
- }
-
- .linkRegistro1 {
-   text-decoration: none;
-   color: rgb(150, 94, 202);
-   font-weight: bold;
- } 
-
-

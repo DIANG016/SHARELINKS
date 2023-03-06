@@ -26,15 +26,15 @@ export const UserData = () => {
         <p>
           <FaUserAlt /> {user.id}
         </p>
-        <p className="userDataEmail">
+        <p>
           <MdMarkEmailRead /> {user.email}
         </p>
-        <p className="userDataRegister">
+        <p>
           <BsFillCalendarCheckFill  />{" "}
           {new Date(user.created_at).toLocaleString()}{" "}
         </p>
         {user.biography ? (
-          <p className="userDataBiography">
+          <p>
             <HiDocumentText /> {user.biography}
           </p>
         ) : null}

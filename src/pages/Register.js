@@ -83,7 +83,7 @@ export const Register = () => {
           />
         </label>
         <div className="registerDiv">
-          <button className="registerButton">Regístrate</button>
+          <button className="buttonBot">Regístrate</button>
         </div>
         {error ? <p className="error">{error}</p> : null}
       </form>

@@ -74,7 +74,7 @@ export const Enlace = ({ enlace, removeLink }) => {
       {user && user.id === enlace.user_id ? (
         <div>
           <button
-            className="buttonEnlace"
+            className="buttonBot buttonEnlace"
             onClick={() => {
               if (window.confirm("¿Estás seguro que quieres borrar el Link?"))
                 deleteLink(enlace.id);

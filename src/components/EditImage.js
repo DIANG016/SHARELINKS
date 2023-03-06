@@ -12,24 +12,11 @@ export const EditImage = () => {
   const { id } = useParams();
   const { token, user } = useContext(AuthContext);
 
-  //console.log(user);
   const [logedUser, setLogedUser] = useState("");
-
-  //const [nombre, setNombre] = useState("");
-  //const [email, setEmail] = useState("");
-
-  //const [biography, setBiography] = useState("");
   const [photo, setPhoto] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const newAvatarRef = useRef();
-
-  // useEffect(() => {
-  //setNombre(user?.nombre);
-  // setEmail(user?.email);
-  //setBiography(user?.biography);
-  //     setPhoto(user?.file);
-  //   }, [user]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,15 +26,7 @@ export const EditImage = () => {
 
       setPhoto(null);
 
-      //   if (!file) {
-      //     toast.warn("No has introducido ningún dato nuevo");
-      //     return;
-      //   }
       const formData = new FormData();
-
-      //formData.append("nombre", nombre);
-      //formData.append("email", email);
-      //  formData.append("biography", biography);
       formData.append("photo", file);
 
      await sendImageService({ token, id, formData });
@@ -58,9 +37,8 @@ export const EditImage = () => {
         photo,
       });
 
-      // setPhoto(null);
       navigate(`/user/${id}`);
-      toast.success("¡Cambios realizados correctamente!");
+      toast.success("¡Foto cambiada correctamente!");
     } catch (error) {
       setError(error.message);
       setTimeout(() => {
@@ -91,14 +69,12 @@ export const EditImage = () => {
 
                 setPhoto(URL.createObjectURL(file));
               }}
-              //   onChange={(e) => setPhoto(e.target.files[0])}
             />
           </div>
           {photo ? (
             <figure>
               <img
                 src={`${process.env.REACT_APP_API}/uploads/${user.photo}`}
-                //src={URL.createObjectURL(photo)}
                 style={{ width: "100px" }}
                 alt="Preview"
               />

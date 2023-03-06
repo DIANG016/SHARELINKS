@@ -64,6 +64,8 @@
 
 @media (min-width: 600px) {
   .formContenedor {
-    align-items: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -3,7 +3,7 @@
 /*Home sin logearse*/
 
 .contenedorHome {
-  color: var(--primary);
+  color:var(--primary);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ img.move3 {
   text-align: center;
   margin-top: 40px;
   font-size: 2rem;
-  color: var(--primary);
+  color:  var(--primary);
   text-shadow: 0.3px 0.3px var(--text-shadow);
 }
 
@@ -177,7 +177,7 @@ img.move3 {
   }
 
   .contenedorHomeLink {
-    margin-right: 40px;
+    margin-right: 80px;
   }
   .homeSubTitulo1 {
     font-size: xx-large;
@@ -186,8 +186,9 @@ img.move3 {
     font-size: x-large;
   }
 
-  /*home logeado*/
-  .tituloHomeLogeado {
-    margin-top: 20px;
-  }
+/*home logeado*/
+.tituloHomeLogeado {
+  margin-top: 20px;
+}
+
 }

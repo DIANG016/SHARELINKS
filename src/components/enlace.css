@@ -87,11 +87,11 @@
   margin-top: 20px;
 }
 
-@media (min-width: 600px) {
+ @media (min-width: 600px) {
   .link {
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .imgNewlink {
     width: 60%;

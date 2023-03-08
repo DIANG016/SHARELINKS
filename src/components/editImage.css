@@ -16,7 +16,7 @@
 .editImagenFiel {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
   color: var(--primary);
   font-weight: bold;
   border: 2px solid var(--primary);

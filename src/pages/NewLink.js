@@ -25,7 +25,7 @@ export const NewLink = ({ addLink }) => {
       e.target.reset();
       setImage(null);
       navigate(`/`);
-      toast.success("¡Link subido satisfact!");
+      toast.success("¡Link subido satisfactoriamente!");
     } catch (error) {
       setError(error.message);
 
@@ -38,9 +38,9 @@ export const NewLink = ({ addLink }) => {
   };
   return (
     <>
-    <section className="hola">
+    <section className="newLinkSection">
       <h2 className="tituloNewLink">Sube un nuevo Link</h2>
-      <form className="formContenedor" onSubmit={handleSubmit}>
+      <form className="formContenedorNew" onSubmit={handleSubmit}>
         <fieldset className="formNewLink">
           <label className="labelNewLink" htmlFor="url">
             Link

@@ -1,21 +1,26 @@
+.newLinkSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tituloNewLink {
   margin-top: 40px;
+  margin-bottom: 10px;
   color: var(--primary);
-  text-align: center;
   text-shadow: 0.5px 0.5px var(--text-shadow);
 }
 
-.formContenedor {
+.formContenedorNew {
   display: flex;
   flex-direction: column;
-  margin: 40px;
-  justify-content: center;
+  margin: 30px;
 }
 
 .formNewLink {
   display: flex;
+  padding: 10px;
   flex-direction: column;
-  padding: 20px;
   border: solid 2px var(--primary);
   border-radius: 5px;
   color: var(--primary);
@@ -60,12 +65,4 @@
 
 .divButton {
   margin-top: 40px;
-}
-
-@media (min-width: 600px) {
-  .formContenedor {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }

@@ -2,80 +2,73 @@
   margin-top: 40px;
   text-align: center;
   color: var(--primary);
-  text-shadow:  0.5px 0.5px var(--text-shadow);
+  text-shadow: 0.5px 0.5px var(--text-shadow);
 }
 
-.formEditUser{
+.formEditUser {
   display: flex;
   flex-direction: column;
   margin: 40px;
   justify-content: center;
   padding-top: 10px;
   color: var(--primary);
- 
 }
 
 .editFieldUser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    border: solid 2px var(--primary);
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 1px 1px 2px var(--box-shadow);
-    gap: 5px;
-  }
-  .labelEditUser {
-    text-shadow: 0.5px 0.5px var(--text-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: solid 2px var(--primary);
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 1px 1px 2px var(--box-shadow);
+  gap: 5px;
+}
+.labelEditUser {
+  text-shadow: 0.5px 0.5px var(--text-shadow);
 }
 
-.inputEdit{
-    height: 30px;
-    border: none;
-    border-bottom: 3px solid var(--primary);
-    background-color:var(--background-color-input);
-    outline-color:darkorchid;
-    padding: 5px;
-    color: var(--primary);
-    
+.inputEdit {
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  background-color: var(--background-color-input);
+  outline-color: darkorchid;
+  padding: 5px;
 }
 
 .inputEdit:focus {
-    background: linear-gradient(to bottom, transparent, rgb(184, 245, 197));
-    border-bottom: 3px solid rgb(199, 157, 239);
-  }
+  background: linear-gradient(to bottom, transparent, rgb(184, 245, 197));
+  border-bottom: 3px solid rgb(199, 157, 239);
+}
 
-    
 .textareaEditUser {
-    border: none;
-    min-height: 60px;
-    border-bottom: 3px solid  var(--primary);
-    background-color: rgb(140, 246, 163);
-    color:  var(--primary);
-    outline-color:darkorchid;
-    resize: none;
-    padding: 5px;
+  border: none;
+  min-height: 60px;
+  border-bottom: 3px solid var(--primary);
+  background-color: rgb(140, 246, 163);
+  color: var(--primary);
+  outline-color: darkorchid;
+  resize: none;
+  padding: 5px;
 }
 
 .textareaEditUser:focus {
-    background: linear-gradient(to bottom, transparent, rgb(184, 245, 197));
-    border-bottom: 3px solid rgb(199, 157, 239);
-  }
-
-
-.errorEdit{
-    color:red;
-    margin-top: 20px;
-    text-align: center;
+  background: linear-gradient(to bottom, transparent, rgb(184, 245, 197));
+  border-bottom: 3px solid rgb(199, 157, 239);
 }
 
+.errorEdit {
+  color: red;
+  margin-top: 20px;
+  text-align: center;
+}
 
 @media (min-width: 600px) {
-   
-    .formEditUser {
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
-    }
+  .formEditUser {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}

@@ -21,11 +21,14 @@ html {
   --text-shadow-button: black;
 }
 
+
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+
+
 
 }
 
@@ -34,6 +37,7 @@ main {
   flex-direction: column;
   background-color: var(--secondary);
   flex:1;
+ 
 }
 
 /*Botones */
@@ -107,6 +111,10 @@ main.nigth .inputEditPassword {
 
 main.nigth input::placeholder {
   color: rgba(189, 179, 199, 0.4);
+}
+
+main.nigth .errorInicio {
+  color: white;
 }
 
 .modoNocturnoSun {

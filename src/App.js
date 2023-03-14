@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header />    
       <main className={`main ${theme}`}>
         <Routes>
           <Route path="/" element={<Home/>} />

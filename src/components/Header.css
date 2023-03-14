@@ -9,6 +9,7 @@ Header {
   z-index: 10;
   height: 3rem;
   top:0;
+  box-shadow: 0.3px 0.3px 0.3px white;
 }
 
 .titleHeader {

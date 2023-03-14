@@ -12,9 +12,8 @@ import image1 from "../imageHome/image1.png";
 import image from "../imageHome/image.png";
 import Avatar from "../components/Avatar";
 
-
 export const Home = () => {
-  const { enlaces, loading, error, removeLink} = useLinks();
+  const { enlaces, loading, error, removeLink } = useLinks();
   const { user } = useContext(AuthContext);
   console.log(user);
 
@@ -31,23 +30,22 @@ export const Home = () => {
       {user ? (
         <>
           <section className="barraSubeLink">
+            {user.photo ? (
+              <figure className="fotoHome">
+                <img
+                  className="imagenHomeUser"
+                  src={`${process.env.REACT_APP_API}/uploads/${user.photo}`}
+                  //src={URL.createObjectURL(photo)}
+                  style={{ width: "80px" }}
+                  alt="Preview"
+                />
+              </figure>
+            ) : (
+              <p className="imageEditFigure">
+                <Avatar />
+              </p>
+            )}
 
-          {user.photo ? (
-        <figure  className="fotoHome">
-          <img
-        className="imagenHomeUser"
-            src={`${process.env.REACT_APP_API}/uploads/${user.photo}`}
-            //src={URL.createObjectURL(photo)}
-            style={{ width: "80px" }}
-            alt="Preview"
-          />
-        </figure>
-      ) : <p className="imageEditFigure"><Avatar/></p>}
-            
-
-         
-
-            
             <Link className="linkSubeLink" to={`/enlace`}>
               Sube un nuevo link
             </Link>

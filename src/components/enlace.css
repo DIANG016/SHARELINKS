@@ -22,6 +22,7 @@
 }
 .enlaceNewLink {
   color: var(--primary);
+  
 }
 
 .tituloLink:hover,
@@ -32,6 +33,7 @@
 .enlaceLink {
   margin-bottom: 10px;
   text-shadow: 0.5px 0.5px var(--text-shadow);
+  text-align: center;
 }
 
 .imgNewlinkCon {

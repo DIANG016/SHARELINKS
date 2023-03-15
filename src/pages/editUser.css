@@ -36,6 +36,7 @@
   background-color: var(--background-color-input);
   outline-color: darkorchid;
   padding: 5px;
+  color: var(--primary);
 }
 
 .inputEdit:focus {

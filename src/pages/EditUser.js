@@ -11,6 +11,7 @@ export const EditUser = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const { token, user } = useContext(AuthContext);
+ 
 
   const [logedUser, setLogedUser] = useState(user);
   const [nombre, setNombre] = useState();

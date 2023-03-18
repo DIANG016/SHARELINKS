@@ -15,7 +15,7 @@ import Avatar from "../components/Avatar";
 export const Home = () => {
   const { enlaces, loading, error, removeLink } = useLinks();
   const { user } = useContext(AuthContext);
-  console.log(user);
+
 
   if (loading)
     return (
@@ -26,7 +26,7 @@ export const Home = () => {
   if (error) return <ErrorMessage message={error} />;
 
   return (
-    <section>
+    <section className="contenedorMain">
       {user ? (
         <>
           <section className="barraSubeLink">

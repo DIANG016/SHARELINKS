@@ -29,14 +29,14 @@ html {
   margin-top: 3rem;
 
 
-
 }
 
 main {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   background-color: var(--secondary);
-  flex:1;
+
  
 }
 
@@ -67,24 +67,16 @@ main {
   background: var(--button-background-active);
 }
 
+.errorBoundary {
+  color: var(--primary);
+  margin: 20px;
+}
+
 .error {
   color: red;
   margin-top: 10px;
   text-align: center;
   margin: 20px;
-}
-
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--colorLetra);
-  font-weight: bold;
-  background-color: var(--primary);
-  width: 100%;
-  height: 2rem;
- 
 }
 
 /*Modo nocturno*/
@@ -126,6 +118,4 @@ main.nigth .errorInicio {
   margin-top: 10px;
   color: var(--colorLetra);
 }
-
-
 

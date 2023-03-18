@@ -27,86 +27,88 @@ export const UserPage = () => {
   if (error) return <ErrorMessage message={error} />;
 
   return (
-    <>
-      <section className="fotoUserCamareP">
-          <figure className="fotoUser">
-            {user.photo ? (
-              <img
-                className="imagenUserPage"
-                src={`${process.env.REACT_APP_API}/uploads/${user.photo}`}
-                alt={user.id}
-                style={{ width: "80px" }}
-              />
-            ) : (
-              <p className="">
-                <Avatar />
-              </p>
-            )}
-          </figure>
-          <div
-            className="buttonCamare"
+    <div className="contenedorUserPage">
+      <section>
+        <section>
+            <figure className="fotoUser">
+              {user.photo ? (
+                <img
+                  className="imagenUserPageData"
+                  src={`${process.env.REACT_APP_API}/uploads/${user.photo}`}
+                  alt={user.id}
+                  style={{ width: "80px" }}
+                />
+              ) : (
+                <p className="">
+                  <Avatar />
+                </p>
+              )}
+            </figure>
+            <div
+              className="buttonCamare"
+              onClick={() => {
+                navigate(`/user/${id}/photo`);
+              }}
+            >
+              <button className="buttonCamara">
+                {" "}
+                <AiOutlineCamera />{" "}
+              </button>
+            </div>
+        </section>
+        <section className="userSection">
+          <h2 className="userTitle">Hola {user.nombre}</h2>
+
+          <p>
+            <FaUserAlt className="userUser" /> {user.id}
+          </p>
+          <p>
+            <MdMarkEmailRead /> {user.email}
+          </p>
+          <p>
+            <BsFillCalendarCheckFill className="userRegister" />{" "}
+            {new Date(user.created_at).toLocaleString()}{" "}
+          </p>
+          {user.biography ? (
+            <p>
+              <HiDocumentText /> {user.biography}
+            </p>
+          ) : null}
+          <span
             onClick={() => {
-              navigate(`/user/${id}/photo`);
+              navigate(`/user/${id}/password`);
             }}
           >
-            <button className="buttonCamara">
+            <button className="buttonUserPage chgPassword">
               {" "}
-              <AiOutlineCamera />{" "}
+              <FiEdit3 /> Cambiar Password
             </button>
-          </div>
+          </span>
+          <span
+            onClick={() => {
+              navigate(`/user/${id}/editUser/${user.id}`);
+            }}
+          >
+            <button className="buttonUserPage edtUser">
+              {" "}
+              <FiEdit3 /> Editar usuario
+            </button>
+          </span>
+          <span
+            onClick={() => {
+              navigate(`/enlace`);
+            }}
+          >
+            <button className="buttonUserPage nuvLink">
+              {" "}
+              <BiLink /> Nuevo link
+            </button>
+          </span>
+        </section>
+        <article>
+          <UserLinks id={user.id} />
+        </article>
       </section>
-      <section className="userSection">
-        <h2 className="userTitle">Hola {user.nombre}</h2>
-
-        <p>
-          <FaUserAlt className="userUser" /> {user.id}
-        </p>
-        <p>
-          <MdMarkEmailRead /> {user.email}
-        </p>
-        <p>
-          <BsFillCalendarCheckFill className="userRegister" />{" "}
-          {new Date(user.created_at).toLocaleString()}{" "}
-        </p>
-        {user.biography ? (
-          <p>
-            <HiDocumentText /> {user.biography}
-          </p>
-        ) : null}
-        <span
-          onClick={() => {
-            navigate(`/user/${id}/password`);
-          }}
-        >
-          <button className="buttonUserPage">
-            {" "}
-            <FiEdit3 /> Cambiar Password
-          </button>
-        </span>
-        <span
-          onClick={() => {
-            navigate(`/user/${id}/editUser/${user.id}`);
-          }}
-        >
-          <button className="buttonUserPage">
-            {" "}
-            <FiEdit3 /> Editar usuario
-          </button>
-        </span>
-        <span
-          onClick={() => {
-            navigate(`/enlace`);
-          }}
-        >
-          <button className="buttonUserPage">
-            {" "}
-            <BiLink /> Nuevo link
-          </button>
-        </span>
-      </section>
-      <article>
-        <UserLinks id={user.id} />
-      </article>
-    </>
+    </div>
   );
 };

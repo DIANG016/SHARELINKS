@@ -16,11 +16,14 @@ export const EnlacePages = () => {
   if (error) return <ErrorMessage message={error} />;
   
     return (
-      <section>
-        <h2 className="titleEnlacePages">Link by {enlace.email}</h2>  
-        <article className="articleEnlacePages">
-          <Enlace enlace={enlace} />
-        </article>
-      </section>
+      <div className="contenedorEnlacePages">
+        <section>
+          <h2 className="titleEnlacePages">Link by</h2> 
+          <p className="pEnlacePages">{enlace.email}</p> 
+          <article className="articleEnlacePages">
+            <Enlace enlace={enlace} />
+          </article>
+        </section>
+      </div>
     );
   };

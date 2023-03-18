@@ -68,8 +68,9 @@
 
 @media (min-width: 600px) {
   .formEditUser {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+  
   }
 }

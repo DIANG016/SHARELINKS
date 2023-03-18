@@ -15,7 +15,7 @@
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0.5px 0.5px 0.5px 0.5px var(--box-shadow);
-  margin: 40px 0 40px 40px;
+  margin: 40px 0 20px 40px;
 }
 
 .imagenUserPage {
@@ -48,7 +48,6 @@
   background: var(--primary);
   color: var(--colorLetra);
   border-radius: 5px;
-  padding: 0.2rem 2rem;
   border: 0;
   font-weight: bold;
   box-shadow: 0.5px 0.5px 0.5px 0.3px rgb(32, 64, 43);
@@ -64,9 +63,29 @@
   background: linear-gradient(to bottom, transparent, rgb(114, 44, 184));
 }
 
+.chgPassword {
+  padding: 0.2rem 1.5rem;
+}
+
+.edtUser {
+  padding: 0.2rem 2.6rem;
+}
+
+.nuvLink {
+  padding: 0.2rem 3.4rem;
+}
+
 /*está en el componente ListEnlace. Aparece en esta página si no nay enlaces.*/
 .pListEnlace {
   margin-top: 20px;
   font-weight: bold;
   text-shadow: 0.4px 0.4px var(--text-shadow);
+}
+
+@media (min-width: 600px) {
+  
+.contenedorUserPage{
+display: flex;
+justify-content: center;
+}
 }

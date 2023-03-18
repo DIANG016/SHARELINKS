@@ -190,5 +190,9 @@ img.move3 {
 .tituloHomeLogeado {
   margin-top: 20px;
 }
+.contenedorMain{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }

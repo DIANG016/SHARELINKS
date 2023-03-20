@@ -19,7 +19,7 @@ export const EnlacePages = () => {
       <div className="contenedorEnlacePages">
         <section>
           <h2 className="titleEnlacePages">Link by</h2> 
-          <p className="pEnlacePages">{enlace.email}</p> 
+          <p className="pEnlacePages">{enlace.nombre}</p> 
           <article className="articleEnlacePages">
             <Enlace enlace={enlace} />
           </article>

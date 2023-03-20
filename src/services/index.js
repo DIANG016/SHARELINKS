@@ -174,7 +174,6 @@ export const sendLikeVotes = async ({ vote, token, id }) => {
   if (!response.ok) {
     throw new Error(json.message);
   }
-  console.log(json);
   return json.message;
 };
 
@@ -197,12 +196,10 @@ export const passwordUserService = async ({
   );
 
   const json = await response.json();
-  console.log(json);
 
   if (!response.ok) {
     throw new Error(json.message);
   }
-  console.log(json);
   return json.data;
 };
 
@@ -223,6 +220,19 @@ export const sendImageService = async ({ formData, token, id }) => {
   if (!response.ok) {
     throw new Error(body.message);
   }
-  console.log(body);
   return body.data;
+};
+
+export const getAllUsersServices = async (token) => {
+  const response = await fetch(`${process.env.REACT_APP_API}/users`, {
+    headers: {
+      Authorization: token,
+    },
+  });
+  const json = await response.json();
+
+  if (!response.ok) {
+    throw new Error(json.message);
+  }
+  return json.data;
 };

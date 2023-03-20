@@ -33,58 +33,60 @@ export const Login = () => {
     }
   };
   return (
-    <section className="login">
-      <div className="loginBloc">
-        <h2 className="titleLogin">ShareLink</h2>
-        <form className="loginForm" onSubmit={handleSubmit}>
-          <label htmlFor="email"> </label>
-          <input
-            className="inputLogin"
-            type="email"
-            name="email"
-            id="email"
-            value={email}
-            required
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Correo Electrónico"
-          />
+    <>
+      <section className="login">
+        <div className="loginBloc">
+          <h2 className="titleLogin">ShareLink</h2>
+          <form className="loginForm" onSubmit={handleSubmit}>
+            <label htmlFor="email"> </label>
+            <input
+              className="inputLogin"
+              type="email"
+              name="email"
+              id="email"
+              value={email}
+              required
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Correo Electrónico"
+            />
 
-          <label htmlFor="password"> </label>
-          <input
-            className="inputLogin"
-            type="password"
-            name="password"
-            id="password"
-            value={password}
-            required
-            placeholder="Contraseña"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <div className="divLoginButton">
-            <button className="buttonBot">Iniciar sesión</button>
-          </div>
-          {error ? <p className="error">{error}</p> : null}
-        </form>
-        <article>
-          <p className="linkRegistro">
-            ¿No tienes cuenta?{" "}
-            <Link className="linkRegistro1" to={"/register"}>
-              Regístrate
-            </Link>{" "}
-          </p>
-        </article>
-      </div>
-      <div className="conImagenLogin">
-        <figure className="figLogin">
-          <img className="movimiento" src={image} alt="teléfono" />
-        </figure>
-        <figure className="figLogin">
-          <img className="movimiento1" src={image2} alt="teléfono" />
-        </figure>
-        <figure className="figLogin">
-          <img className="movimiento2" src={image1} alt="teléfono" />
-        </figure>
-      </div>
-    </section>
+            <label htmlFor="password"> </label>
+            <input
+              className="inputLogin"
+              type="password"
+              name="password"
+              id="password"
+              value={password}
+              required
+              placeholder="Contraseña"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <div className="divLoginButton">
+              <button className="buttonBot">Iniciar sesión</button>
+            </div>
+          </form>
+          <article>
+            <p className="linkRegistro">
+              ¿No tienes cuenta?{" "}
+              <Link className="linkRegistro1" to={"/register"}>
+                Regístrate
+              </Link>{" "}
+            </p>
+          </article>
+        </div>
+        <div className="conImagenLogin">
+          <figure className="figLogin">
+            <img className="movimiento" src={image} alt="teléfono" />
+          </figure>
+          <figure className="figLogin">
+            <img className="movimiento1" src={image2} alt="teléfono" />
+          </figure>
+          <figure className="figLogin">
+            <img className="movimiento2" src={image1} alt="teléfono" />
+          </figure>
+        </div>
+      </section>
+      <div>{error ? <p className="error">{error}</p> : null}</div>
+    </>
   );
 };

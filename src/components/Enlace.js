@@ -67,9 +67,11 @@ export const Enlace = ({ enlace, removeLink }) => {
             <p>Votos al mejor link: {enlace.votosTotales}</p>
           ) : null}
         </p>
-        <div>
-          <LikeVotes defaultValue={1} id={enlace.id} />
-        </div>
+        {user && user.id !== enlace.user_id ? (
+           <div>
+           <LikeVotes defaultValue={1} id={enlace.id} />
+         </div>
+ ) : null}
       </article>
       {user && user.id === enlace.user_id ? (
         <div>

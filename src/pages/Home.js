@@ -17,6 +17,7 @@ export const Home = () => {
   const { user } = useContext(AuthContext);
 
 
+
   if (loading)
     return (
       <p>
@@ -24,6 +25,7 @@ export const Home = () => {
       </p>
     );
   if (error) return <ErrorMessage message={error} />;
+
 
   return (
     <section className="contenedorMain">

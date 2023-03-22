@@ -119,6 +119,7 @@ img.move3 {
   margin-top: 15px;
   margin-left: 40px;
   align-items: center;
+ 
 }
 
 .fotoHome {
@@ -138,13 +139,16 @@ img.move3 {
 }
 
 .linkSubeLink {
+  background-color: var(--primary);
   border: 1px solid var(--primary);
   border-radius: 50px;
   text-decoration: none;
-  color: rgb(180, 166, 193);
+  color: var(--colorLetra);
+  font-weight: bold;
   width: 200px;
   padding: 5px;
   box-shadow: 0.5px 0.5px 1px var(--box-shadow);
+  text-align: center;
 }
 
 .avatarHome {

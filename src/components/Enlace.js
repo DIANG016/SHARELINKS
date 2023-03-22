@@ -10,6 +10,10 @@ export const Enlace = ({ enlace, removeLink }) => {
   const navigate = useNavigate();
   const { user, token } = useContext(AuthContext);
   const [error, setError] = useState("");
+  //const {votosTotales, setVotosTotales} = useState();
+  
+
+
 
   const deleteLink = async (id) => {
     try {

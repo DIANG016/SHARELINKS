@@ -13,6 +13,7 @@ import Spinner from "../components/Spinner";
 import "./userPage.css";
 import Avatar from "../components/Avatar";
 
+
 export const UserPage = () => {
   const { id } = useParams();
   const { user, loading, error } = useUser(id);

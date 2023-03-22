@@ -7,7 +7,7 @@
   align-items: center;
   box-shadow: 1px 1px 2px var(--box-shadow);
   max-width: 600px;
-  overflow: hidden;
+
 }
 
 .tituloEnlace {
@@ -16,24 +16,26 @@
   text-align: center;
 }
 
+
 .tituloLink {
   color: var(--primary);
   text-decoration: none;
-}
-.enlaceNewLink {
-  color: var(--primary);
-  
-}
-
-.tituloLink:hover,
-.enlaceNewLink:hover {
-  color: rgb(189, 168, 208);
 }
 
 .enlaceLink {
   margin-bottom: 10px;
   text-shadow: 0.5px 0.5px var(--text-shadow);
+  word-break: break-all;
   text-align: center;
+
+}
+.enlaceNewLink {
+  color: var(--primary);
+}
+
+.tituloLink:hover,
+.enlaceNewLink:hover {
+  color: rgb(189, 168, 208);
 }
 
 .imgNewlinkCon {
